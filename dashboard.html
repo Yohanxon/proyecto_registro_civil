@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard · Registro Civil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dashboard-body">
+  <!-- Sidebar -->
+  <aside class="dashboard-sidebar">
+    <div class="logo">
+      <span class="logo-icon"><i class="fas fa-gavel"></i></span>
+      <span class="logo-text">Registro Civil</span>
+    </div>
+    <nav class="sidebar-menu">
+      <a href="#" class="active"><i class="fas fa-chart-pie"></i> Resumen</a>
+      <a href="#"><i class="fas fa-clock"></i> Solicitudes Pendientes</a>
+      <a href="#"><i class="fas fa-calendar-check"></i> Citas Agendadas</a>
+      <a href="#"><i class="fas fa-users"></i> Usuarios</a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="index.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+    </div>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="dashboard-main">
+    <h1 style="color:var(--primary); margin-bottom:1.5rem;">Panel de Administración</h1>
+    
+    <!-- Tarjetas de resumen -->
+    <div class="dash-stats">
+      <div class="stat-card">
+        <div class="stat-number">12</div>
+        <div class="stat-label"><i class="fas fa-calendar-day"></i> Citas para hoy</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">45</div>
+        <div class="stat-label"><i class="fas fa-file-alt"></i> Trámites pendientes</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">8</div>
+        <div class="stat-label"><i class="fas fa-check-circle"></i> Completados hoy</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3</div>
+        <div class="stat-label"><i class="fas fa-exclamation-triangle"></i> Con observaciones</div>
+      </div>
+    </div>
+
+    <!-- Tabla de solicitudes recientes -->
+    <div class="dash-table">
+      <h3 style="margin-bottom:1rem; color:var(--primary);">Últimas solicitudes recibidas</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Ciudadano</th>
+            <th>Trámite</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>#001</strong></td>
+            <td>María Pérez</td>
+            <td>Nacimiento</td>
+            <td>2026-08-27</td>
+            <td><span class="badge">En proceso</span></td>
+            <td><a href="#" style="color:var(--accent);"><i class="fas fa-eye"></i></a></td>
+          </tr>
+          <tr>
+            <td><strong>#002</strong></td>
+            <td>Juan Rodríguez</td>
+            <td>Matrimonio</td>
+            <td>2026-08-26</td>
+            <td><span class="badge badge-secondary">Pendiente</span></td>
+            <td><a href="#" style="color:var(--accent);"><i class="fas fa-eye"></i></a></td>
+          </tr>
+          <tr>
+            <td><strong>#003</strong></td>
+            <td>Ana Gómez</td>
+            <td>Defunción</td>
+            <td>2026-08-25</td>
+            <td><span class="badge">En proceso</span></td>
+            <td><a href="#" style="color:var(--accent);"><i class="fas fa-eye"></i></a></td>
+          </tr>
+          <tr>
+            <td><strong>#004</strong></td>
+            <td>Carlos Herrera</td>
+            <td>Unión de Hecho</td>
+            <td>2026-08-24</td>
+            <td><span class="badge badge-secondary">Pendiente</span></td>
+            <td><a href="#" style="color:var(--accent);"><i class="fas fa-eye"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

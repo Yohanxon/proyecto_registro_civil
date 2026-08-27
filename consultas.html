@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultas · Registro Civil Jiménez</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="public-header">
+    <div class="container header-flex">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-gavel"></i></span>
+        <span class="logo-text">Registro Civil · Jiménez</span>
+      </div>
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container nav-flex">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tramites.html">Trámites</a></li>
+          <li><a href="requisitos.html">Requisitos</a></li>
+          <li><a href="citas.html">Citas</a></li>
+          <li><a href="consultas.html" class="active">Consultas</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Consultar estado de trámite</h2>
+        <div class="form-card">
+          <form>
+            <div class="form-group">
+              <label for="solicitud">Número de solicitud</label>
+              <input type="text" id="solicitud" placeholder="Ej: SOL-2026-001">
+            </div>
+            <div class="form-group">
+              <label for="cedula-consulta">Cédula</label>
+              <input type="text" id="cedula-consulta" placeholder="V-12345678">
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-primary"><i class="fas fa-search"></i> Consultar</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Resultado simulado -->
+        <div class="result-box">
+          <p><strong>Número de solicitud:</strong> SOL-2026-001</p>
+          <p><strong>Ciudadano:</strong> María Pérez</p>
+          <p><strong>Trámite:</strong> Acta de Nacimiento</p>
+          <p class="estado estado-amarillo"><i class="fas fa-clock"></i> Estado: En proceso</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="public-footer">
+    <div class="container footer-flex">
+      <p>&copy; 2026 Registro Civil Municipal de Jiménez. Todos los derechos reservados.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citas · Registro Civil Jiménez</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="public-header">
+    <div class="container header-flex">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-gavel"></i></span>
+        <span class="logo-text">Registro Civil · Jiménez</span>
+      </div>
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container nav-flex">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tramites.html">Trámites</a></li>
+          <li><a href="requisitos.html">Requisitos</a></li>
+          <li><a href="citas.html" class="active">Citas</a></li>
+          <li><a href="consultas.html">Consultas</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Solicitar cita</h2>
+        <div class="form-card">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" placeholder="Ej: María Pérez">
+            </div>
+            <div class="form-group">
+              <label for="cedula">Cédula</label>
+              <input type="text" id="cedula" placeholder="V-12345678">
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" placeholder="maria@ejemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" placeholder="0412-1234567">
+            </div>
+            <div class="form-group">
+              <label for="tramite">Tipo de trámite</label>
+              <select id="tramite">
+                <option value="">Selecciona...</option>
+                <option value="nacimiento">Acta de Nacimiento</option>
+                <option value="matrimonio">Matrimonio</option>
+                <option value="defuncion">Defunción</option>
+                <option value="union">Unión Estable de Hecho</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha">
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-primary"><i class="fas fa-calendar-plus"></i> Agendar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="public-footer">
+    <div class="container footer-flex">
+      <p>&copy; 2026 Registro Civil Municipal de Jiménez. Todos los derechos reservados.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
